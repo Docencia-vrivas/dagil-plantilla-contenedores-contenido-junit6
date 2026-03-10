@@ -36,7 +36,7 @@ public interface ContenedorInterface<Contenido> {
      * @exception IllegalArgumentException Si el objeto es NULL.
      * @return La propia instancia de Contenedor.
      */
-    public ContenedorPlantilla add(final Contenido objeto) throws IllegalArgumentException;
+    public ContenedorInterface<Contenido> add(final Contenido objeto) throws IllegalArgumentException;
 
     /**
      * Elimina un objeto del contenedor.
@@ -45,6 +45,6 @@ public interface ContenedorInterface<Contenido> {
      * @exception IllegalArgumentException Si el objeto es NULL.
      * @return La propia instancia de Contenedor.
      */
-    public ContenedorPlantilla remove(final Contenido objeto) throws IllegalArgumentException;
+    public ContenedorInterface<Contenido> remove(final Contenido objeto) throws IllegalArgumentException;
 }
 
